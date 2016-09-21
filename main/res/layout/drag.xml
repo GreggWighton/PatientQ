@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rellay"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:columnWidth="320dp"
+    android:orientation="vertical"
+    android:rowCount="17"
+    android:stretchMode="columnWidth" >
+
+    <RelativeLayout
+        android:id="@+id/topright"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_row="0"
+        android:background="@drawable/shape"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toStartOf="@+id/linearLayout">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/topleft"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_row="0"
+        android:background="@drawable/shape"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toEndOf="@+id/linearLayout">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomright"
+        android:layout_width="650dp"
+        android:layout_height="100dp"
+        android:background="@drawable/shape"
+        android:layout_row="16"
+        android:layout_column="0"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_toEndOf="@+id/button5"
+        android:layout_alignStart="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/myimage4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:drawableTop="@drawable/sleep"
+
+            android:text="Sleep" />
+
+
+        <TextView
+            android:id="@+id/myimage5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:drawableTop="@drawable/dance1"
+            android:text="Dance" />
+
+
+        <TextView
+            android:id="@+id/myimage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:drawableTop="@drawable/dinner"
+            android:text="Dinner" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/myimage4"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/dance" />-->
+        <!--<ImageView-->
+            <!--android:id="@+id/myimage2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/sleep" />-->
+        <!--<ImageView-->
+            <!--android:id="@+id/myimage3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/dinner" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_row="0"
+        android:background="@drawable/shape"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Yes"
+        android:id="@+id/textView"
+        android:textSize="25dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignEnd="@+id/button5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="No"
+        android:id="@+id/textView2"
+        android:textSize="25dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:layout_above="@+id/topleft"
+        android:layout_toStartOf="@+id/button6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Maybe"
+        android:id="@+id/textView3"
+        android:textSize="25dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="Save"
+        android:id="@+id/button5"
+        android:layout_marginLeft="-20dp"
+        android:background="@drawable/btn"
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/bottomright"
+        android:layout_alignStart="@+id/topright" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="Add"
+        android:id="@+id/button6"
+        android:layout_marginRight="-20dp"
+        android:background="@drawable/btn"
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/bottomright"
+        android:layout_alignEnd="@+id/topleft" />
+
+</RelativeLayout>
+

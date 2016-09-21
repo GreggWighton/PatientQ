@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.patientq.Save">
+    <RelativeLayout
+        android:id="@+id/topright"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_row="0"
+        android:background="@drawable/btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/topleft"
+        android:layout_alignParentStart="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/topleft"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_row="0"
+        android:background="@drawable/btn"
+        android:layout_marginTop="240dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/linearLayout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView3"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_row="0"
+        android:background="@drawable/btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/topright"
+        android:layout_toEndOf="@+id/topright">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView2" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Yes"
+        android:id="@+id/textView"
+        android:layout_marginStart="64dp"
+        android:textSize="25dp"
+        android:layout_above="@+id/topright"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/abc_primary_text_disable_only_material_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="No"
+        android:id="@+id/textView2"
+        android:textSize="25dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:layout_above="@+id/topright"
+        android:layout_alignEnd="@+id/topleft"
+        android:layout_marginEnd="64dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Maybe"
+        android:id="@+id/textView3"
+        android:textSize="25dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:layout_alignTop="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="Summary Of Activities"
+        android:id="@+id/button5"
+        android:layout_marginLeft="-20dp"
+        android:background="@drawable/save"
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/button6"
+        android:layout_alignStart="@+id/textView"
+        android:layout_toStartOf="@+id/textView3" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="Export Data"
+        android:id="@+id/button6"
+        android:layout_marginRight="-20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/save"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Any Other Comment"
+        android:id="@+id/textView4"
+        android:layout_marginTop="81dp"
+        android:textSize="30dp"
+        android:layout_below="@+id/topright"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="63dp"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
